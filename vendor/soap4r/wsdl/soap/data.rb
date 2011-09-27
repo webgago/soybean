@@ -17,7 +17,7 @@ require 'wsdl/soap/header'
 require 'wsdl/soap/headerfault'
 require 'wsdl/soap/fault'
 require 'wsdl/soap/address'
-require 'wsdl/soap/complexType'
+require 'wsdl/soap/complex_type'
 
 
 module WSDL

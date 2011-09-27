@@ -8,7 +8,7 @@
 
 
 require 'wsdl/info'
-require 'wsdl/xmlSchema/element'
+require 'wsdl/xml_schema/element'
 require 'xsd/namedelements'
 
 

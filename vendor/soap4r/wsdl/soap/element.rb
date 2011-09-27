@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'wsdl/xmlSchema/element'
+require 'wsdl/xml_schema/element'
 
 
 module WSDL

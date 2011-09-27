@@ -8,9 +8,9 @@
 
 
 require 'wsdl/info'
-require 'wsdl/soap/mappingRegistryCreator'
-require 'wsdl/soap/methodDefCreator'
-require 'wsdl/soap/classDefCreatorSupport'
+require 'wsdl/soap/mapping_registry_creator'
+require 'wsdl/soap/method_def_creator'
+require 'wsdl/soap/class_def_creator_support'
 
 
 module WSDL

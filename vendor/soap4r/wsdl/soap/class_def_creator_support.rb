@@ -9,7 +9,7 @@
 
 require 'wsdl/info'
 require 'soap/mapping'
-require 'soap/mapping/typeMap'
+require 'soap/mapping/type_map'
 require 'xsd/codegen/gensupport'
 
 

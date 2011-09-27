@@ -8,7 +8,7 @@
 
 
 require 'xsd/codegen/gensupport'
-require 'wsdl/xmlSchema/importer'
+require 'wsdl/xml_schema/importer'
 require 'wsdl/soap/classDefCreator'
 require 'wsdl/soap/classDefCreatorSupport'
 require 'wsdl/soap/literalMappingRegistryCreator'

@@ -9,7 +9,7 @@
 
 require 'soap/soap'
 require 'soap/httpconfigloader'
-require 'wsdl/xmlSchema/parser'
+require 'wsdl/xml_schema/parser'
 
 
 module WSDL

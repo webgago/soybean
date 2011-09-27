@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'soap/mapping/typeMap'
+require 'soap/mapping/type_map'
 require 'xsd/codegen/gensupport'
 
 

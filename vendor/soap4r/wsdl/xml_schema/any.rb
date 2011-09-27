@@ -11,52 +11,52 @@ require 'wsdl/info'
 
 
 module WSDL
-module XMLSchema
+  module XMLSchema
 
 
-class Any < Info
-  attr_accessor :maxoccurs
-  attr_accessor :minoccurs
-  attr_accessor :namespace
-  attr_accessor :process_contents
+    class Any < Info
+      attr_accessor :maxoccurs
+      attr_accessor :minoccurs
+      attr_accessor :namespace
+      attr_accessor :process_contents
 
-  def initialize
-    super()
-    @maxoccurs = 1
-    @minoccurs = 1
-    @namespace = '##any'
-    @process_contents = 'strict'
-  end
-
-  def targetnamespace
-    parent.targetnamespace
-  end
-
-  def parse_element(element)
-    nil
-  end
-
-  def parse_attr(attr, value)
-    case attr
-    when MaxOccursAttrName
-      if value.source == 'unbounded'
-        @maxoccurs = nil
-      else
-        @maxoccurs = Integer(value.source)
+      def initialize
+        super()
+        @maxoccurs = 1
+        @minoccurs = 1
+        @namespace = '##any'
+        @process_contents = 'strict'
       end
-      value.source
-    when MinOccursAttrName
-      @minoccurs = Integer(value.source)
-    when NamespaceAttrName
-      @namespace = value.source
-    when ProcessContentsAttrName
-      @process_contents = value.source
-    else
-      nil
+
+      def targetnamespace
+        parent.targetnamespace
+      end
+
+      def parse_element(element)
+        nil
+      end
+
+      def parse_attr(attr, value)
+        case attr
+          when MaxOccursAttrName
+            if value.source == 'unbounded'
+              @maxoccurs = nil
+            else
+              @maxoccurs = Integer(value.source)
+            end
+            value.source
+          when MinOccursAttrName
+            @minoccurs = Integer(value.source)
+          when NamespaceAttrName
+            @namespace = value.source
+          when ProcessContentsAttrName
+            @process_contents = value.source
+          else
+            nil
+        end
+      end
     end
+
+
   end
-end
-
-
-end
 end

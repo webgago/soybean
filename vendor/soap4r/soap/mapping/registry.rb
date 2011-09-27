@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'soap/baseData'
+require 'soap/base_data'
 require 'soap/mapping/mapping'
 
 

@@ -8,9 +8,9 @@
 
 
 require 'wsdl/info'
-require 'wsdl/soap/classDefCreatorSupport'
-require 'wsdl/soap/encodedMappingRegistryCreator'
-require 'wsdl/soap/literalMappingRegistryCreator'
+require 'wsdl/soap/class_def_creator_support'
+require 'wsdl/soap/encoded_mapping_registry_creator'
+require 'wsdl/soap/literal_mapping_registry_creator'
 require 'xsd/codegen/moduledef.rb'
 
 

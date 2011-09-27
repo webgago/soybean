@@ -9,9 +9,9 @@
 
 require 'xsd/qname'
 require 'xsd/namedelements'
-require 'soap/baseData'
+require 'soap/base_data'
 require 'soap/mapping/mapping'
-require 'soap/mapping/typeMap'
+require 'soap/mapping/type_map'
 
 
 module SOAP

@@ -14,7 +14,7 @@ require 'xsd/xmlparser'
 require 'soap/ns'
 require 'wsdl/wsdl'
 require 'wsdl/data'
-require 'wsdl/xmlSchema/data'
+require 'wsdl/xml_schema/data'
 require 'wsdl/soap/data'
 
 

@@ -10,14 +10,14 @@
 require 'logger'
 require 'xsd/qname'
 require 'wsdl/importer'
-require 'wsdl/soap/classDefCreator'
-require 'wsdl/soap/servantSkeltonCreator'
-require 'wsdl/soap/driverCreator'
-require 'wsdl/soap/clientSkeltonCreator'
-require 'wsdl/soap/standaloneServerStubCreator'
-require 'wsdl/soap/servletStubCreator'
-require 'wsdl/soap/cgiStubCreator'
-require 'wsdl/soap/classNameCreator'
+require 'wsdl/soap/class_def_creator'
+require 'wsdl/soap/servant_skelton_creator'
+require 'wsdl/soap/driver_creator'
+require 'wsdl/soap/client_skelton_creator'
+require 'wsdl/soap/standalone_server_stub_creator'
+require 'wsdl/soap/servlet_stub_creator'
+require 'wsdl/soap/cgi_stub_creator'
+require 'wsdl/soap/class_name_creator'
 
 
 module WSDL

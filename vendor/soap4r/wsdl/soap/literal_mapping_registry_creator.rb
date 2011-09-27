@@ -8,7 +8,7 @@
 
 
 require 'wsdl/info'
-require 'wsdl/soap/mappingRegistryCreatorSupport'
+require 'wsdl/soap/mapping_registry_creator_support'
 
 
 module WSDL

@@ -7,9 +7,9 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'soap/baseData'
+require 'soap/base_data'
 require 'soap/mapping/mapping'
-require 'soap/mapping/typeMap'
+require 'soap/mapping/type_map'
 require 'xsd/codegen/gensupport'
 require 'xsd/namedelements'
 

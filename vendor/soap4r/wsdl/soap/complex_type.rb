@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'wsdl/xmlSchema/complexType'
+require 'wsdl/xml_schema/complex_type'
 require 'soap/mapping'
 
 

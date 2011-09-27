@@ -8,9 +8,9 @@
 
 
 require 'wsdl/info'
-require 'wsdl/soap/classDefCreatorSupport'
+require 'wsdl/soap/class_def_creator_support'
 require 'soap/rpc/element'
-require 'soap/rpc/methodDef'
+require 'soap/rpc/method_def'
 
 
 module WSDL

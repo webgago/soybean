@@ -11,25 +11,25 @@ require 'wsdl/info'
 
 
 module WSDL
-module XMLSchema
+  module XMLSchema
 
 
-class Annotation < Info
-  def initialize
-    super
+    class Annotation < Info
+      def initialize
+        super
+      end
+
+      def parse_element(element)
+        # Accepts any element.
+        self
+      end
+
+      def parse_attr(attr, value)
+        # Accepts any attribute.
+        true
+      end
+    end
+
+
   end
-
-  def parse_element(element)
-    # Accepts any element.
-    self
-  end
-
-  def parse_attr(attr, value)
-    # Accepts any attribute.
-    true
-  end
-end
-
-
-end
 end

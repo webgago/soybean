@@ -8,7 +8,7 @@
 
 
 require 'soap/header/handler'
-require 'soap/baseData'
+require 'soap/base_data'
 
 
 module SOAP

@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'wsdl/xmlSchema/importer'
+require 'wsdl/xml_schema/importer'
 require 'wsdl/parser'
 
 

@@ -7,7 +7,7 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'wsdl/soap/classDefCreatorSupport'
+require 'wsdl/soap/class_def_creator_support'
 
 
 module WSDL

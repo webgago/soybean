@@ -12,7 +12,7 @@ require 'xsd/ns'
 require 'xsd/charset'
 require 'xsd/datatypes'
 require 'xsd/xmlparser'
-require 'wsdl/xmlSchema/data'
+require 'wsdl/xml_schema/data'
 
 
 module WSDL

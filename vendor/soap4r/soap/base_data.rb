@@ -1089,7 +1089,7 @@ private
 end
 
 
-require 'soap/mapping/typeMap'
+require 'soap/mapping/type_map'
 
 
 end

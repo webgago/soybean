@@ -8,7 +8,7 @@
 
 
 require 'wsdl/info'
-require 'wsdl/xmlSchema/ref'
+require 'wsdl/xml_schema/ref'
 
 
 module WSDL

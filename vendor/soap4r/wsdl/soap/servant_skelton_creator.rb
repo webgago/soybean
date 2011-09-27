@@ -8,7 +8,7 @@
 
 
 require 'wsdl/info'
-require 'wsdl/soap/classDefCreatorSupport'
+require 'wsdl/soap/class_def_creator_support'
 require 'xsd/codegen'
 
 

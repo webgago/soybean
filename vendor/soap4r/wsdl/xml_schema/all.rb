@@ -7,19 +7,19 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'wsdl/xmlSchema/content'
+require 'wsdl/xml_schema/content'
 
 
 module WSDL
-module XMLSchema
+  module XMLSchema
 
 
-class All < Content
-  def initialize
-    super()
+    class All < Content
+      def initialize
+        super()
+      end
+    end
+
+
   end
-end
-
-
-end
 end
