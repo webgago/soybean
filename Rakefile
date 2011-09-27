@@ -17,10 +17,12 @@ Jeweler::Tasks.new do |gem|
   gem.name = "soybean"
   gem.homepage = "http://github.com/webgago/soybean"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Generate soap web-services from you wsdl. see README}
+  gem.description = %Q{Generate soap web-services from you wsdl. Generate: all classes from xsd, and other.}
   gem.email = "a.sozontov@gmail.com"
   gem.authors = ["Anton Sozontov"]
+  gem.executables = ['soybean']
+  gem.default_executable = 'soybean'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
