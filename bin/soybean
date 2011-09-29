@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-$:.unshift File.absolute_path('vendor')
-$:.unshift File.absolute_path('vendor/soap4r')
-$:.unshift File.absolute_path('lib')
+$:.unshift File.expand_path('../vendor', File.dirname(__FILE__))
+$:.unshift File.expand_path('../vendor/soap4r', File.dirname(__FILE__))
+$:.unshift File.expand_path('../lib', File.dirname(__FILE__))
 require 'thor'
 require 'thor/actions'
 require 'soybean'
