@@ -10,13 +10,21 @@ require 'soybean'
 class Soybean::CLI < Thor
   include Thor::Actions
 
-  desc "classes file_path.xsd", "Generate Ruby classes from XSD"
+  desc "types file_path.xsd", "Generate Ruby classes for xsd-schema from file_path.xsd"
   method_options :quiet => :boolean, :force => :boolean
-
-  def classes(location, destination = 'types')
-    action Soybean::Actions::GenerateClasses.new(self, location, destination, options)
+  def types(location, destination = '.')
+    Soybean::Generators::TypesGenerator.new(URI.parse(location)).generate do |filename, content|
+      create_file File.join(destination, filename), content, options
+    end
   end
 
+  desc "service [PATH_TO_WSDL] [DESTINATION_DIR]", "Generate Ruby classes from WSDL"
+  method_options :quiet => :boolean, :force => :boolean
+  def service(wsdl, destination_dir)
+    Soybean::Generators::ServiceGenerator.new(destination_dir, wsdl).generate do |filename, content|
+      create_file filename, content, options
+    end
+  end
 end
 
 Soybean::CLI.start

@@ -91,9 +91,9 @@ private
   def dump_class_def
     name = @name.to_s.split(/::/)
     if @baseclass
-      format("class #{name.last} < #{@baseclass}")
+      "class #{name.last} < #{@baseclass}\n"
     else
-      format("class #{name.last}")
+      "class #{name.last}\n"
     end
   end
 
