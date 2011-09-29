@@ -14,13 +14,21 @@ module Soybean
       end
 
       def generate
-        (schemes + mappings).map do |generator|
+        (schemes + mappings + interface + model).map do |generator|
           yield path.join(generator.dir, generator.filename), generator.generate
         end
       end
 
       def mappings
         schemes.map { |gen| MappingGenerator.new(gen.xsd) }
+      end
+
+      def interface
+        [InterfaceGenerator.new(@wsdl)]
+      end
+
+      def model
+        [ModelGenerator.new(@wsdl)]
       end
 
       protected

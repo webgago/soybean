@@ -33,7 +33,7 @@ module Soybean
           m.def_const(tag, dq(ns))
         end
 
-        registry = ModuleDef.new("MappingRegistry", [m])
+        registry = ModuleDef.new("Mappings", [m])
         registry.def_require("soap/mapping")
         registry.def_code('EncodedRegistry ||= ::SOAP::Mapping::EncodedRegistry.new')
         registry.def_code('LiteralRegistry ||= ::SOAP::Mapping::LiteralRegistry.new')

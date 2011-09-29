@@ -1,0 +1,2 @@
+class GetRegistrarsService < GetRegistrarsInterface
+end

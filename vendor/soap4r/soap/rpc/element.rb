@@ -7,8 +7,8 @@
 # either the dual license version in 2003, or any later version.
 
 
-require 'soap/baseData'
-require 'soap/rpc/methodDef'
+require 'soap/base_data'
+require 'soap/rpc/method_def'
 
 
 module SOAP
