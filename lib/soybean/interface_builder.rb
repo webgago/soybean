@@ -46,6 +46,9 @@ module Soybean
       assigned_method = collect_assigned_method(@definitions, porttype.name, @modulepath)
       class_name = mapped_class_basename(porttype.name, @modulepath)
       c = XSD::CodeGen::ClassDef.new(class_name, 'Soybean::Interface')
+      methoddef = WSDL::SOAP::MethodDefCreator.new(@definitions, @name_creator, @modulepath, {}).dump(porttype.name)
+      c.def_code %Q{Methods = [\n#{methoddef.gsub(/^/, "  ")}\n]}
+
       element_definitions = @definitions.collect_elements
       binding = porttype.find_binding
       if binding
