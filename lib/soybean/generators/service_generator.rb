@@ -3,9 +3,10 @@ module Soybean
     class ServiceGenerator
       attr_reader :path, :wsdl_location, :wsdl
 
-      def initialize(path, wsdl)
-        @path, @wsdl_location = Pathname.new(path), wsdl
+      def initialize(path, wsdl, spec_dir)
+        @path, @wsdl_location = path, wsdl
         @wsdl = import_wsdl
+        @spec_dir = spec_dir
         @schemes = @wsdl.importedschema.keys
       end
 
@@ -14,21 +15,25 @@ module Soybean
       end
 
       def generate
-        (schemes + mappings + interface + model).map do |generator|
-          yield path.join(generator.dir, generator.filename), generator.generate
+        (schemes + mappings + interface + model + specs).map do |generator|
+          yield generator.fullpath(path), generator.generate
         end
       end
 
       def mappings
-        schemes.map { |gen| MappingGenerator.new(gen.xsd) }
+        @mappings ||= schemes.map { |gen| MappingGenerator.new(gen.xsd) }
       end
 
       def interface
-        [InterfaceGenerator.new(@wsdl)]
+        @interface ||= [InterfaceGenerator.new(@wsdl)]
       end
 
       def model
-        [ModelGenerator.new(@wsdl)]
+        @model ||= [ModelGenerator.new(@wsdl)]
+      end
+
+      def specs
+        @specs ||= model.map { |m| ModelSpecGenerator.new(m, @spec_dir) }
       end
 
       protected

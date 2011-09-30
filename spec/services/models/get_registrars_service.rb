@@ -1,2 +1,0 @@
-class GetRegistrarsService < GetRegistrarsInterface
-end

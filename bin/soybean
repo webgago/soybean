@@ -9,20 +9,30 @@ require 'soybean'
 
 class Soybean::CLI < Thor
   include Thor::Actions
+  class_options :quiet => :boolean, :force => :boolean, :pretend => :boolean
 
-  desc "types file_path.xsd", "Generate Ruby classes for xsd-schema from file_path.xsd"
-  method_options :quiet => :boolean, :force => :boolean
+  desc "types [PATH_TO_XSD]", "Generate Ruby classes for xsd-schema from file_path.xsd"
   def types(location, destination = '.')
     Soybean::Generators::TypesGenerator.new(URI.parse(location)).generate do |filename, content|
       create_file File.join(destination, filename), content, options
     end
   end
 
-  desc "service [PATH_TO_WSDL] [DESTINATION_DIR]", "Generate Ruby classes from WSDL"
-  method_options :quiet => :boolean, :force => :boolean
-  def service(wsdl, destination_dir)
-    Soybean::Generators::ServiceGenerator.new(destination_dir, wsdl).generate do |filename, content|
+  desc "service [PATH_TO_WSDL] [DESTINATION_DIR]", "Generate classes for WebService from WSDL"
+  def service(wsdl, dir)
+    Soybean::Generators::ServiceGenerator.new(dir, wsdl, spec_dir(dir)).generate do |filename, content|
       create_file filename, content, options
+    end
+  end
+
+  no_tasks do
+    def spec_dir(dir)
+      default_spec_dir = "spec/#{dir}/models"
+      if options[:force]
+        default_spec_dir
+      else
+        ask("Spec directory: '#{default_spec_dir}'? ").presence || default_spec_dir
+      end
     end
   end
 end

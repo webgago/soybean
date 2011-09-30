@@ -15,9 +15,16 @@ module Soybean
       end
 
       def generate
-        "class %s < %sInterface\nend" % [@name.camelize, @name.camelize.gsub(/Service$/,'')]
+        "class #{class_name} < #{interface_name}\nend"
       end
 
+      def class_name
+        @name.camelize
+      end
+
+      def interface_name
+        @name.camelize.gsub(/Service$/,'Interface')
+      end
     end
   end
 end
