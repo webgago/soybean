@@ -36,6 +36,10 @@ module Soybean
       result
     end
 
+    def mapped_class_basename(*)
+      (@definitions.name.name.gsub(/Service$/, '') rescue 'Base') + 'Interface'
+    end
+
     private
 
     def dump_porttype(porttype)

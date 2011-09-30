@@ -7,7 +7,7 @@ module Soybean
 
       def initialize(wsdl)
         @wsdl = wsdl
-        @name = (wsdl.name.name.underscore rescue 'base')
+        @name = (wsdl.name.name.underscore.gsub(/service$/,'') rescue 'base') + 'service'
       end
 
       def dir
