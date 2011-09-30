@@ -8,7 +8,7 @@ module Soybean
       # @param model [ModelGenerator]
       def initialize(model, spec_dir)
         @model, @spec_dir = model, spec_dir
-        @name = model.name
+        @name = model.name + '_spec'
       end
 
       def fullpath(basedir)
