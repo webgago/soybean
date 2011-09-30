@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{soybean}
-  s.version = "2.0.1"
+  s.version = "2.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anton Sozontov"]
-  s.date = %q{2011-09-29}
+  s.date = %q{2011-09-30}
   s.default_executable = %q{soybean}
   s.description = %q{Generate soap web-services from you wsdl. Generate: all classes from xsd, and other.}
   s.email = %q{a.sozontov@gmail.com}
@@ -36,17 +36,16 @@ Gem::Specification.new do |s|
     "lib/soybean/generators/interface_generator.rb",
     "lib/soybean/generators/mapping_generator.rb",
     "lib/soybean/generators/model_generator.rb",
+    "lib/soybean/generators/model_spec_generator.rb",
     "lib/soybean/generators/service_generator.rb",
+    "lib/soybean/generators/templates/model_spec.rb",
     "lib/soybean/generators/types_generator.rb",
+    "lib/soybean/interface.rb",
+    "lib/soybean/interface_builder.rb",
     "lib/soybean/literal_mapping_registry_creator.rb",
     "soybean.gemspec",
-    "spec/services/interfaces/get_registrars_interface.rb",
-    "spec/services/mappings/base.rb",
-    "spec/services/mappings/get_registrars.rb",
-    "spec/services/models/get_registrars_service.rb",
-    "spec/services/types/get_registrars.rb",
-    "spec/services/types/type.rb",
     "spec/soybean_spec.rb",
+    "spec/spec/services/models/get_registrars_service.rb",
     "spec/spec_helper.rb",
     "vendor/soap4r/soap/attachment.rb",
     "vendor/soap4r/soap/attrproxy.rb",
