@@ -14,7 +14,7 @@ describe <%= class_name %> do
   context 'actions' do
     <% actions.each do |action, params| %>
     it '#<%= action %> should not raise NotImplementedError' do
-      expect { subject.send action<%= params ? ', stub' * params.size : '' %> }.to_not raise_error(NotImplementedError)
+      expect { subject.send :<%= action %><%= params ? ', stub' * params.size : '' %> }.to_not raise_error(NotImplementedError)
     end
     <% end %>
   end
