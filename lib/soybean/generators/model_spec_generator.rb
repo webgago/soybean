@@ -26,6 +26,10 @@ module Soybean
         content
       end
 
+      def actions
+        @actions ||= InterfaceBuilder.new(@model.wsdl, WSDL::SOAP::ClassNameCreator.new).actions
+      end
+
       def class_name
         @model.class_name
       end

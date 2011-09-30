@@ -3,7 +3,7 @@ module Soybean
     class ModelGenerator
       include BaseGenerator
 
-      attr_reader :name
+      attr_reader :name, :wsdl
 
       def initialize(wsdl)
         @wsdl = wsdl
