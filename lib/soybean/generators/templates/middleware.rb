@@ -1,5 +1,5 @@
 module Middlewares
-  class <%= class_name %> < Soap4r::Middleware::Base
+  class <%= class_name %> < Soybean::Middleware
     setup do
       self.endpoint = %r(^/<%= model_class_name %>)
       service = <%= model_class_name %>.new

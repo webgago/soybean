@@ -12,9 +12,9 @@ require 'soap/soap'
 require 'soap/element'
 require 'soap/parser'
 require 'soap/generator'
-require 'soap/encodingstyle/soapHandler'
-require 'soap/encodingstyle/literalHandler'
-require 'soap/encodingstyle/aspDotNetHandler'
+require 'soap/encodingstyle/soap_handler'
+require 'soap/encodingstyle/literal_handler'
+require 'soap/encodingstyle/asp_dot_net_handler'
 
 
 module SOAP

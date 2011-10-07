@@ -97,7 +97,7 @@ module MappingRegistryCreatorSupport
     else
       varname, name, type, occurrence = definition
       '[' + [
-        varname.dump,
+        varname.dump.underscore,
         dump_type(name, type),
         dump_occurrence(occurrence)
       ].compact.join(', ') + ']'

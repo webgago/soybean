@@ -15,7 +15,7 @@ require 'soap/rpc/rpc'
 require 'soap/rpc/element'
 require 'soap/header/handlerset'
 require 'soap/filter'
-require 'soap/streamHandler'
+require 'soap/stream_handler'
 require 'soap/mimemessage'
 require 'soap/header/handlerset'
 

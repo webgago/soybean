@@ -8,7 +8,7 @@
 
 
 require 'xsd/qname'
-require 'soap/baseData'
+require 'soap/base_data'
 
 
 module SOAP

@@ -106,7 +106,7 @@ class HTTPStreamHandler < StreamHandler
       RETRYABLE = true
     rescue LoadError
       warn("Loading http-access2 failed.  Net/http is used.") if $DEBUG
-      require 'soap/netHttpClient'
+      require 'soap/net_http_client'
       Client = SOAP::NetHttpClient
       RETRYABLE = false
     end

@@ -9,7 +9,7 @@
 
 require 'soap/soap'
 require 'soap/ns'
-require 'soap/baseData'
+require 'soap/base_data'
 require 'soap/encodingstyle/handler'
 require 'xsd/codegen/gensupport'
 

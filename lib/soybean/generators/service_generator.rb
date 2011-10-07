@@ -16,7 +16,7 @@ module Soybean
 
       def generate
         (schemes + mappings + interface + model + specs + middleware).map do |generator|
-          yield generator.fullpath(path), generator.generate
+          yield generator.fullpath(path), generator.generate, generator
         end
       end
 

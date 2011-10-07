@@ -7,6 +7,13 @@ module Soybean
       def attr_accessor(*attrs)
         self.attributes += attrs
         super
+        attrs.each do |meth|
+          self.class_eval <<-RUBY
+            def #{meth}
+              @#{meth} || @#{meth.to_s.camelize(:lower)}
+            end
+          RUBY
+        end
       end
     end
 
