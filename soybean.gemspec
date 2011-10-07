@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{soybean}
-  s.version = "2.2.2"
+  s.version = "2.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anton Sozontov"]
@@ -46,6 +46,7 @@ Gem::Specification.new do |s|
     "lib/soybean/interface.rb",
     "lib/soybean/interface_builder.rb",
     "lib/soybean/literal_mapping_registry_creator.rb",
+    "lib/soybean/middleware.rb",
     "soybean.gemspec",
     "spec/soybean_spec.rb",
     "spec/spec_helper.rb",
