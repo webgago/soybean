@@ -62,8 +62,6 @@ module Soybean
     def dump_porttype
       class_name = mapped_class_basename(@porttype.name, @modulepath)
       c = XSD::CodeGen::ClassDef.new(class_name, 'Soybean::Interface')
-      methoddef = MethodDefCreator.new(@definitions, @name_creator, @modulepath, {}).dump(@porttype.name)
-      c.def_code %Q{Methods = [\n#{methoddef.gsub(/^/, "  ")}\n]}
 
       element_definitions = @definitions.collect_elements
       actions.each do |method_name, params, operation|
@@ -76,6 +74,9 @@ module Soybean
         m.comment = dump_method_signature(method_name, operation, element_definitions)
         c.add_method(m)
       end
+
+      methoddef = MethodDefCreator.new(@definitions, @name_creator, @modulepath, {}).dump(@porttype.name)
+      c.def_code %Q{Methods = [\n#{methoddef.gsub(/^/, "  ")}\n]}
 
       c.dump
     end

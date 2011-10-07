@@ -42,42 +42,76 @@ module WSDL
         @defined_const = {}
       end
 
+      def padding
+        @padding ||= "  " * modulepath_split(@modulepath).size
+      end
+
+      def require_imported_types
+        @definitions.importedschema.values.map(&:targetnamespace).map do |ns|
+          "require 'types/#{type_path(ns)}'\n"
+        end.join
+      end
+
+      def include_imported_types
+        @definitions.importedschema.values.map(&:targetnamespace).map do |ns|
+          "include ::#{module_name(ns)}\n"
+        end.join
+      end
+
+      def import_scheme(url)
+        WSDL::XMLSchema::Importer.import(url.path)
+      end
+
+      def namespace(ns=@definitions.targetnamespace)
+        URI.parse(ns).path[1..-2]
+      end
+
+      def type_path(ns=@definitions.targetnamespace)
+        namespace(ns).underscore
+      end
+
+      def module_name(ns=@definitions.targetnamespace)
+        namespace(ns).camelize
+      end
+
       def dump(type = nil)
         result = "require 'xsd/qname'\n"
+
         # cannot use @modulepath because of multiple classes
         if @modulepath
           result << "\n"
-          result << modulepath_split(@modulepath).collect { |ele| "module #{ele}" }.join("; ")
+          result << modulepath_split(@modulepath).each_with_index.collect { |ele, i| ("  " * i) + "module #{ele}" }.join("\n")
           result << "\n\n"
         end
+        result << padding + include_imported_types
         str = dump_group(type)
         unless str.empty?
           result << "\n" unless result.empty?
-          result << str
+          result << str.gsub("\n", "\n#{padding}")
         end
         str = dump_complextype(type)
         unless str.empty?
           result << "\n" unless result.empty?
-          result << str
+          result << padding + str.gsub("\n", "\n#{padding}")
         end
-        str = dump_simpletype(type)
+        str = dump_simpletype(type).gsub("\n", "\n#{padding}")
         unless str.empty?
           result << "\n" unless result.empty?
-          result << str
+          result << padding + str.gsub("\n", "\n#{padding}")
         end
-        str = dump_element(type)
+        str = dump_element(type).gsub("\n", "\n#{padding}")
         unless str.empty?
           result << "\n" unless result.empty?
-          result << str
+          result << padding + str.gsub("\n", "\n#{padding}")
         end
-        str = dump_attribute(type)
+        str = dump_attribute(type).gsub("\n", "\n#{padding}")
         unless str.empty?
           result << "\n" unless result.empty?
-          result << str
+          result << padding + str.gsub("\n", "\n#{padding}")
         end
         if @modulepath
           result << "\n\n"
-          result << modulepath_split(@modulepath).collect { |ele| "end" }.join("; ")
+          result << modulepath_split(@modulepath).each_with_index.collect { |ele, i| ("  " * i) + "end" }.reverse.join("\n")
           result << "\n"
         end
         result

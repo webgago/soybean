@@ -8,9 +8,9 @@ module Soybean
       attr_reader :name
 
       def initialize(url)
-        @name = xsd_name(url.path)
         @definitions = import_scheme(url)
-        super(@definitions, WSDL::SOAP::ClassNameCreator.new, 'Types')
+        @name = type_path
+        super(@definitions, WSDL::SOAP::ClassNameCreator.new, module_name)
       end
 
       def xsd
@@ -48,14 +48,6 @@ module Soybean
       end
 
       protected
-
-      def import_scheme(url)
-        WSDL::XMLSchema::Importer.import(url.path)
-      end
-
-      def xsd_name(path)
-        Pathname.new(path).basename('.*').to_s.underscore.gsub(/_service$/, '')
-      end
 
       def with_cache
         result = yield

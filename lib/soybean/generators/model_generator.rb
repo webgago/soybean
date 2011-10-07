@@ -7,14 +7,17 @@ module Soybean
 
       def initialize(wsdl)
         @wsdl = wsdl
-        @name = (wsdl.name.name.underscore.gsub(/service$/,'') rescue 'base') + 'service'
+        @name = (wsdl.name.name.underscore.gsub(/service$/, '') rescue 'base') + 'service'
       end
 
       def dir
-        'models'
+        ''
       end
 
       def generate
+        @wsdl.importedschema.map do |uri, schema|
+          "require 'mappings/#{URI.parse(schema.targetnamespace).path[1..-2].underscore}'\n"
+        end.join +
         "class #{class_name} < #{interface_name}\nend"
       end
 
@@ -23,7 +26,7 @@ module Soybean
       end
 
       def interface_name
-        @name.camelize.gsub(/Service$/,'Interface')
+        @name.camelize.gsub(/Service$/, 'Interface')
       end
     end
   end

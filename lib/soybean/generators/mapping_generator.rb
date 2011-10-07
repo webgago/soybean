@@ -9,9 +9,10 @@ module Soybean
 
       attr_reader :name
 
-      def initialize(schema)
+      def initialize(schema, wsdl)
         @schema = schema
-        @name = name_from_namespace(schema.targetnamespace)
+        @wsdl = wsdl
+        @name = namespace.underscore
         @name_creator = WSDL::SOAP::ClassNameCreator.new
         @defined_const = {}
       end
@@ -34,7 +35,13 @@ module Soybean
         end
 
         registry = ModuleDef.new("Mappings", [m])
-        registry.def_require("soap/mapping")
+
+        @schema.importedschema.values.map(&:targetnamespace).map do |ns|
+          registry.def_require('mappings/'+URI.parse(ns).path[1..-2].underscore)
+        end
+
+        registry.def_require(type_path)
+
         registry.def_code('EncodedRegistry ||= ::SOAP::Mapping::EncodedRegistry.new')
         registry.def_code('LiteralRegistry ||= ::SOAP::Mapping::LiteralRegistry.new')
 
@@ -46,16 +53,28 @@ module Soybean
       end
 
       def literal_creator
-        LiteralMappingRegistryCreator.new(@schema, @name_creator, 'Types', @defined_const, mapping_cache[:literal])
+        LiteralMappingRegistryCreator.new(@schema, @name_creator, module_name, @defined_const, mapping_cache[:literal])
       end
 
       def encoded_creator
-        EncodedMappingRegistryCreator.new(@schema, @name_creator, 'Types', @defined_const, mapping_cache[:encoded])
+        EncodedMappingRegistryCreator.new(@schema, @name_creator, module_name, @defined_const, mapping_cache[:encoded])
       end
 
       def name_from_namespace(ns)
         name = URI.parse(ns).path.split('/').delete_if { |part| part.empty? || part == 'type' }.last
         (name || 'base').underscore.gsub(/_service$/, '')
+      end
+
+      def namespace
+        URI.parse(@schema.targetnamespace).path[1..-2]
+      end
+
+      def type_path
+        "types/" + namespace.underscore
+      end
+
+      def module_name
+        "::" + namespace.camelize
       end
 
       class ModuleDef < XSD::CodeGen::ModuleDef
@@ -98,6 +117,40 @@ module Soybean
           buf << dump_module_def_end
           buf << dump_package_def_end(package) unless package.empty?
           buf.gsub(/^\s+$/, '')
+        end
+      end
+
+      class MethodDefCreator < WSDL::SOAP::MethodDefCreator
+        private
+        def dump_method(mdef)
+          style = mdef.style
+          inputuse = mdef.inputuse
+          outputuse = mdef.outputuse
+          paramstr = param2str(mdef.parameters)
+          if paramstr.empty?
+            paramstr = '[]'
+          else
+            paramstr = "[ " << paramstr.split(/\r?\n/).join("\n    ") << " ]"
+          end
+          definitions = <<__EOD__
+#{ndq(mdef.soapaction)},
+  #{dq(mdef.name).underscore},
+  #{paramstr},
+  { :request_style =>  #{nsym(style)}, :request_use =>  #{nsym(inputuse)},
+    :response_style => #{nsym(style)}, :response_use => #{nsym(outputuse)},
+    :faults => #{mdef.faults.inspect} }
+__EOD__
+          if style == :rpc
+            assign_const(mdef.qname.namespace, 'Ns')
+            return <<__EOD__
+[ #{dqname(mdef.qname)},
+  #{definitions}]
+__EOD__
+          else
+            return <<__EOD__
+[ #{definitions}]
+__EOD__
+          end
         end
       end
     end

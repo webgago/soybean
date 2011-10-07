@@ -15,13 +15,13 @@ module Soybean
       end
 
       def generate
-        (schemes + mappings + interface + model + specs).map do |generator|
+        (schemes + mappings + interface + model + specs + middleware).map do |generator|
           yield generator.fullpath(path), generator.generate
         end
       end
 
       def mappings
-        @mappings ||= schemes.map { |gen| MappingGenerator.new(gen.xsd) }
+        @mappings ||= schemes.map { |gen| MappingGenerator.new(gen.xsd, @wsdl) }
       end
 
       def interface
@@ -30,6 +30,10 @@ module Soybean
 
       def model
         @model ||= [ModelGenerator.new(@wsdl)]
+      end
+
+      def middleware
+        @middleware ||= model.map { |m| MiddlewareGenerator.new(m) }
       end
 
       def specs
