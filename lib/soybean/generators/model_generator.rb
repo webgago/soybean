@@ -26,7 +26,7 @@ module Soybean
       end
 
       def interface_name
-        @name.camelize.gsub(/Service$/, 'Interface')
+        "Interfaces::" + @name.camelize.gsub(/Service$/, 'Interface')
       end
     end
   end
