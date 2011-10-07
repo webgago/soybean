@@ -17,7 +17,7 @@ module Soybean
       end
 
       def generate
-        InterfaceBuilder.new(@wsdl, WSDL::SOAP::ClassNameCreator.new).dump
+        InterfaceBuilder.new(@wsdl, WSDL::SOAP::ClassNameCreator.new, "Interfaces").dump
       end
 
     end
