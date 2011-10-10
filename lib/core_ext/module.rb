@@ -11,7 +11,7 @@ module Soybean
       def soap_attribute(*attrs)
         self.attributes += attrs
         attr_accessor *attrs
-        attrs.each do |meth|
+        attrs.delete_if { |s| s.underscore == s }.each do |meth|
           self.class_eval <<-RUBY
             def #{meth.to_s.underscore}
               #{meth}
