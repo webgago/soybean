@@ -517,7 +517,7 @@ module Mapping
         elename = XSD::QName.new(default_ns, varname)
       end
       SchemaElementDefinition.new(
-        varname.underscore, mapped_class, elename, minoccurs, maxoccurs, as_any, as_array)
+        varname, mapped_class, elename, minoccurs, maxoccurs, as_any, as_array)
     end
   end
 

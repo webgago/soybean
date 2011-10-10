@@ -6,7 +6,7 @@ module Soybean
         unless safevarname?(varname || attrname)
           raise ArgumentError.new("#{varname || attrname} seems to be unsafe")
         end
-        @attrdef << [attrname.underscore, writable, varname.underscore]
+        @attrdef << [attrname, writable, varname]
       end
 
       def def_classvar(var, value)
@@ -19,7 +19,7 @@ module Soybean
 
       def def_method(name, *params)
         return if name == 'initialize'
-        super name.underscore, *params.map(&:underscore)
+        super name, *params
       end
 
       def dump
@@ -75,13 +75,14 @@ module Soybean
         if @baseclass
           "class #{name.last} < #{@baseclass}\n"
         else
-          "class #{name.last} < Soybean::ComplexType\n"
+          "class #{name.last}\n" <<
+              "  include Soybean::ComplexType\n\n"
         end
       end
 
       def accessors
         @attrdef.map do |attrname, *|
-          format("attr_accessor #{attrname.to_sym.inspect}\n", 2)
+          format("soap_attribute #{attrname.to_sym.inspect}\n", 2)
         end.join
       end
 

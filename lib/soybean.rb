@@ -6,6 +6,8 @@ require 'active_support/deprecation'
 require 'active_support/dependencies'
 require 'active_support/dependencies/autoload'
 require 'active_support/core_ext/module/delegation'
+require 'active_support/concern'
+require 'core_ext/module'
 
 $:.unshift File.absolute_path(File.join(File.dirname(__FILE__), '..', 'vendor/soap4r'))
 
