@@ -9,7 +9,7 @@ module Soybean
 
     module ClassMethods
       def soap_attribute(*attrs)
-        self.attributes += attrs
+        self.attributes = (self.attributes + attrs).uniq
         attr_accessor *attrs
         attrs.delete_if { |s| s.to_s.underscore == s.to_s }.each do |meth|
           self.class_eval <<-RUBY
