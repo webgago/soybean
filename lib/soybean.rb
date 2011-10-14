@@ -16,5 +16,6 @@ ActiveSupport::Dependencies.autoload_paths << File.absolute_path(File.join(File.
 
 module Soybean
   extend ActiveSupport::Autoload
+
   VERSION = File.read(File.expand_path('../../VERSION', __FILE__))
 end
