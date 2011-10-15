@@ -6,8 +6,9 @@ require 'active_support/deprecation'
 require 'active_support/dependencies'
 require 'active_support/dependencies/autoload'
 require 'active_support/core_ext/module/delegation'
+require 'active_support/core_ext/module/attribute_accessors'
 require 'active_support/concern'
-require 'core_ext/module'
+require 'logger'
 
 $:.unshift File.absolute_path(File.join(File.dirname(__FILE__), '..', 'vendor/soap4r'))
 
@@ -18,4 +19,14 @@ module Soybean
   extend ActiveSupport::Autoload
 
   VERSION = File.read(File.expand_path('../../VERSION', __FILE__))
+
+  mattr_accessor :engines
+  self.engines = []
+
+  mattr_accessor :services
+  self.services = []
+
+  mattr_accessor :logger
+  self.logger = Logger.new(STDOUT)
+
 end

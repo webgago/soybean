@@ -1,0 +1,67 @@
+# Logfile created on 2011-10-15 17:22:13 +0400 by logger.rb/25413
+I, [2011-10-15T17:39:50.305889 #8786]  INFO -- : GetRegistrarsEngine was called at 2011-10-15 17:39:50 +0400
+I, [2011-10-15T17:39:50.846069 #8786]  INFO -- : GetRegistrarsEngine was called at 2011-10-15 17:39:50 +0400
+I, [2011-10-15T17:39:51.062316 #8786]  INFO -- : GetRegistrarsEngine was called at 2011-10-15 17:39:51 +0400
+I, [2011-10-15T17:40:57.577793 #8792]  INFO -- : GetRegistrarsEngine was called at 2011-10-15 17:40:57 +0400
+I, [2011-10-15T17:40:57.834471 #8792]  INFO -- : GetRegistrarsEngine was called at 2011-10-15 17:40:57 +0400
+I, [2011-10-15T18:55:32.234926 #9979]  INFO -- : GetRegistrarsService
+D, [2011-10-15T18:55:32.235073 #9979] DEBUG -- : 	REQUEST: #<Rack::Lint::InputWrapper:0x00000002e183e8>
+D, [2011-10-15T18:55:32.235155 #9979] DEBUG -- : 	RESPONSE: ["405 - Method Not Allowed"]
+I, [2011-10-15T19:01:52.563566 #10078]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:01:52.563714 #10078] DEBUG -- : 	REQUEST: 
+D, [2011-10-15T19:01:52.563794 #10078] DEBUG -- : 	RESPONSE: ["405 - Method Not Allowed"]
+I, [2011-10-15T19:03:04.909073 #10117]  INFO -- : GetRegistrarsService
+I, [2011-10-15T19:03:39.180886 #10117]  INFO -- : GetRegistrarsService
+I, [2011-10-15T19:03:39.837575 #10117]  INFO -- : GetRegistrarsService
+I, [2011-10-15T19:03:50.365230 #10155]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:03:50.365349 #10155] DEBUG -- : 	REQUEST: 
+I, [2011-10-15T19:04:08.579039 #10155]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:04:08.579145 #10155] DEBUG -- : 	REQUEST: 
+I, [2011-10-15T19:04:15.498975 #10191]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:04:15.499109 #10191] DEBUG -- : 	REQUEST: 
+D, [2011-10-15T19:04:15.499181 #10191] DEBUG -- : 	RESPONSE: 405 - Method Not Allowed
+I, [2011-10-15T19:04:16.188641 #10191]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:04:16.188754 #10191] DEBUG -- : 	REQUEST: 
+D, [2011-10-15T19:04:16.188823 #10191] DEBUG -- : 	RESPONSE: 405 - Method Not Allowed
+I, [2011-10-15T19:33:17.929796 #10717]  INFO -- : Service found: {GetRegistrarsService}GetRegistrarsService
+I, [2011-10-15T19:33:17.929996 #10717]  INFO -- : Service found: {InquiryService}InquiryService
+I, [2011-10-15T19:33:32.604032 #10721]  INFO -- : Service found: {GetRegistrarsService}GetRegistrarsService
+I, [2011-10-15T19:33:32.604230 #10721]  INFO -- : Service found: {InquiryService}InquiryService
+I, [2011-10-15T19:33:40.237724 #10721]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:33:40.237873 #10721] DEBUG -- : 	REQUEST: 
+D, [2011-10-15T19:33:40.237970 #10721] DEBUG -- : 	RESPONSE: 405 - Method Not Allowed
+I, [2011-10-15T19:36:55.704575 #10901]  INFO -- : SOAP Services: START
+I, [2011-10-15T19:36:55.704743 #10901]  INFO -- : Service found: {GetRegistrarsService}GetRegistrarsService
+I, [2011-10-15T19:36:55.704893 #10901]  INFO -- : Service found: {InquiryService}InquiryService
+I, [2011-10-15T19:38:04.378536 #10901]  INFO -- : SOAP Services: STOP
+I, [2011-10-15T19:38:06.538410 #10934]  INFO -- : SOAP Services: START
+I, [2011-10-15T19:38:06.538608 #10934]  INFO -- : Service found: GetRegistrarsService route to GetRegistrarsService
+I, [2011-10-15T19:38:06.538775 #10934]  INFO -- : Service found: InquiryService route to InquiryService
+I, [2011-10-15T19:38:33.441267 #10934]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:38:33.442883 #10934] DEBUG -- : 	REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/GetRegistrarsService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:GetRegistrars>
+         <regionCode>1</regionCode>
+         <!--Optional:-->
+         <statementType>birth</statementType>
+      </type:GetRegistrars>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-15T19:40:14.829182 #10934]  INFO -- : SOAP Services: STOP
+I, [2011-10-15T19:40:24.047847 #10973]  INFO -- : SOAP Services: START
+I, [2011-10-15T19:40:24.047998 #10973]  INFO -- : Service found: GetRegistrarsService route to GetRegistrarsService
+I, [2011-10-15T19:40:24.048145 #10973]  INFO -- : Service found: InquiryService route to InquiryService
+I, [2011-10-15T19:40:29.546649 #10973]  INFO -- : GetRegistrarsService
+D, [2011-10-15T19:40:29.546863 #10973] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/GetRegistrarsService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:GetRegistrars>
+         <regionCode>1</regionCode>
+         <!--Optional:-->
+         <statementType>birth</statementType>
+      </type:GetRegistrars>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-15T19:41:39.753824 #10973]  INFO -- : SOAP Services: STOP

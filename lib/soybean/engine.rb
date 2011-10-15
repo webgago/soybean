@@ -1,8 +1,16 @@
 require 'soap/rpc/router'
 
 module Soybean
-  class Middleware
+
+  class Engine
     include SOAP
+    class_attribute :service, :instance_reader => false, :instance_writer => false
+    class_attribute :logger, :instance_reader => true, :instance_writer => false
+    self.logger = Soybean.logger
+
+    def self.inherited(subclass)
+      Soybean.engines << subclass
+    end
 
     module ClassMethods
       def setup
@@ -103,22 +111,38 @@ module Soybean
         router.add_document_operation(receiver, soapaction, name, param_def, opt)
       end
     end
-
     extend ClassMethods
 
     def initialize(app = nil)
       @app = app
+      setup!(self.class.service)
+    end
+
+    def setup!(service)
+      self.class.setup {}
+      service.class::Methods.each do |definitions|
+        opt = definitions.last
+        if opt[:request_style] == :document
+          self.class.router.add_document_operation(service, *definitions)
+        else
+          self.class.router.add_rpc_operation(service, *definitions)
+        end
+      end
+      self.class.mapping_registry = Mappings::EncodedRegistry
+      self.class.literal_mapping_registry = Mappings::LiteralRegistry
     end
 
     def call(env)
-      if env['PATH_INFO'].match(self.class.endpoint)
-        handle(env)
-      else
-        # we can act as both a middleware and an app
-        @app ?
-            @app.call(env) :
-            (return 404, {"Content-Type" => "text/plain"}, ["404 - Not Found"])
-      end
+      request = Rack::Request.new(env)
+      logger.info "%s" % [self.class.service.class.name]
+      logger.debug "\tREQUEST: \n%s" % [request.body.read]
+      s, h, b = handle(env)
+      logger.debug "\tRESPONSE: \n%s" % [b.join]
+      return s, h, b
+    rescue => e
+      [200, {'Allow' => 'POST',
+             'Content-Type' => 'text/plain'}, [e.message,
+                                               e.backtrace.join("\n")]]
     end
 
     def handle(env)

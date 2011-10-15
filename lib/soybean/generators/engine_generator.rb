@@ -1,6 +1,6 @@
 module Soybean
   module Generators
-    class MiddlewareGenerator
+    class EngineGenerator
       include BaseGenerator
 
       attr_reader :name, :model
@@ -10,15 +10,15 @@ module Soybean
 
       def initialize(model)
         @model = model
-        @name = (wsdl.name.name.underscore.gsub(/service$/, '') rescue 'base') + 'middleware'
+        @name = (wsdl.name.name.underscore.gsub(/service$/, '') rescue 'base') + 'engine'
       end
 
       def dir
-        'middlewares'
+        'engines'
       end
 
       def generate
-        source = File.expand_path("../templates/middleware.rb", __FILE__)
+        source = File.expand_path("../templates/engine.rb", __FILE__)
         context = instance_eval('binding')
         content = ERB.new(::File.binread(source), nil, '-').result(context)
         content
