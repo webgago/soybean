@@ -158,11 +158,10 @@ module Soybean
       logger.info "Started %s \"%s\" for %s at %s. caller %s" % [request.request_method,
                                                                  URI(env['REQUEST_URI']).path,
                                                                  request.ip,
-                                                                 Time.now.strftime(logger.datetime_format),
+                                                                 Time.now.strftime("%Y-%m-%d %H:%M:%S"),
                                                                  request.referer] if logger
 
       logger.info "  Processing by %s" % [self.class.service.class.name] if logger
-      logger.debug "  Headers: %s" % [request.header.inspect] if logger
       logger.debug "  Parameters: " if logger
 
       logger.debug pretty_xml(input_params, '    ') if logger
