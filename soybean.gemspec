@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{soybean}
-  s.version = "2.4.3"
+  s.version = "2.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anton Sozontov"]
-  s.date = %q{2011-10-10}
+  s.date = %q{2011-10-17}
   s.default_executable = %q{soybean}
   s.description = %q{Generate soap web-services from you wsdl. Generate: all classes from xsd, and other.}
   s.email = %q{a.sozontov@gmail.com}
@@ -28,27 +28,31 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/soybean",
-    "lib/core_ext/module.rb",
+    "config.ru",
     "lib/soybean.rb",
+    "lib/soybean/application.rb",
     "lib/soybean/cli.rb",
     "lib/soybean/complex_type.rb",
     "lib/soybean/encoded_mapping_registry_creator.rb",
+    "lib/soybean/engine.rb",
     "lib/soybean/generators/base_generator.rb",
     "lib/soybean/generators/class_generator.rb",
+    "lib/soybean/generators/engine_generator.rb",
     "lib/soybean/generators/interface_generator.rb",
     "lib/soybean/generators/mapping_generator.rb",
-    "lib/soybean/generators/middleware_generator.rb",
     "lib/soybean/generators/model_generator.rb",
     "lib/soybean/generators/model_spec_generator.rb",
     "lib/soybean/generators/service_generator.rb",
     "lib/soybean/generators/templates/engine.rb",
     "lib/soybean/generators/templates/model_spec.rb",
     "lib/soybean/generators/types_generator.rb",
+    "lib/soybean/generators/wsdl_generator.rb",
     "lib/soybean/interface.rb",
     "lib/soybean/interface_builder.rb",
     "lib/soybean/literal_mapping_registry_creator.rb",
-    "lib/soybean/engine.rb",
+    "lib/soybean/soap_attribute.rb",
     "soybean.gemspec",
+    "soybean.log",
     "spec/soybean_spec.rb",
     "spec/spec_helper.rb",
     "vendor/soap4r/soap/attachment.rb",
@@ -224,30 +228,36 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, ["~> 3.1"])
       s.add_runtime_dependency(%q<i18n>, [">= 0"])
+      s.add_runtime_dependency(%q<nokogiri>, [">= 0"])
+      s.add_runtime_dependency(%q<rack>, [">= 0"])
+      s.add_runtime_dependency(%q<rack-mount>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_development_dependency(%q<yard>, ["~> 0.6.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, ["~> 3.1"])
       s.add_dependency(%q<i18n>, [">= 0"])
+      s.add_dependency(%q<nokogiri>, [">= 0"])
+      s.add_dependency(%q<rack>, [">= 0"])
+      s.add_dependency(%q<rack-mount>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_dependency(%q<yard>, ["~> 0.6.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
-      s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<activesupport>, ["~> 3.1"])
     s.add_dependency(%q<i18n>, [">= 0"])
+    s.add_dependency(%q<nokogiri>, [">= 0"])
+    s.add_dependency(%q<rack>, [">= 0"])
+    s.add_dependency(%q<rack-mount>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
     s.add_dependency(%q<yard>, ["~> 0.6.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
-    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
