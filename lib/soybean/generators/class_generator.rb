@@ -82,7 +82,7 @@ module Soybean
 
       def accessors
         @attrdef.map do |attrname, writeable, varname|
-          format("soap_attribute #{varname.underscore.to_sym.inspect}\n", 2)
+          format("soap_attribute #{varname.to_sym.inspect}\n", 2)
         end.join
       end
 

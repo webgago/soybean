@@ -162,15 +162,15 @@ module Soybean
                                                                  request.referer] if logger
 
       logger.info "  Processing by %s" % [self.class.service.class.name] if logger
-      logger.debug "  Parameters: " if logger
+      logger.debug "  Request: " if logger
 
       logger.debug pretty_xml(input_params, '    ') if logger
 
       s, h, b = yield
 
-      logger.debug "Response:" % [h.inspect] if logger
-      logger.debug "  Headers: %s" % [h.inspect] if logger
-      logger.debug "  Body: " if logger
+      logger.debug "  Response:" % [h.inspect] if logger
+      logger.debug "    Headers: %s" % [h.inspect] if logger
+      logger.debug "    Body: " if logger
 
       logger.debug pretty_xml(b.join, '    ') if logger
 
