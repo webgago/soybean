@@ -133,16 +133,53 @@ module Soybean
     end
 
     def call(env)
-      request = Rack::Request.new(env)
-      logger.info "%s" % [self.class.service.class.name]
-      logger.debug "\tREQUEST: \n%s" % [request.body.read]
-      s, h, b = handle(env)
-      logger.debug "\tRESPONSE: \n%s" % [b.join]
+      s, h, b = with_logging(env, logger) do
+        handle(env)
+      end
       return s, h, b
     rescue => e
       [200, {'Allow' => 'POST',
              'Content-Type' => 'text/plain'}, [e.message,
                                                e.backtrace.join("\n")]]
+    end
+
+    def with_logging(env, logger)
+      #Started GET "/" for 127.0.0.1 at 2011-09-28 14:21:28 +0400
+      # Processing by DashboardController#index as HTML
+      # User Load (0.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`id` = 100 LIMIT 1
+      # Role Load (0.3ms)  SELECT `roles`.* FROM `roles` INNER JOIN `assignments` ON `roles`.`id` = `assignments`.`role_id` WHERE `assignments`.`user_id` = 100
+      #Redirected to http://localhost:3000/municipal_services
+      #Completed 302 Found in 89ms
+
+      request = Rack::Request.new(env)
+      input_params = request.body.read
+      request.body.rewind
+
+      logger.info "Started %s \"%s\" for %s at %s. caller %s" % [request.request_method,
+                                                                 URI(env['REQUEST_URI']).path,
+                                                                 request.ip,
+                                                                 Time.now.strftime(logger.datetime_format),
+                                                                 request.referer] if logger
+
+      logger.info "  Processing by %s" % [self.class.service.class.name] if logger
+      logger.debug "  Headers: %s" % [request.header.inspect] if logger
+      logger.debug "  Parameters: " if logger
+
+      logger.debug pretty_xml(input_params, '    ') if logger
+
+      s, h, b = yield
+
+      logger.debug "Response:" % [h.inspect] if logger
+      logger.debug "  Headers: %s" % [h.inspect] if logger
+      logger.debug "  Body: " if logger
+
+      logger.debug pretty_xml(b.join, '    ') if logger
+
+      return s, h, b
+
+    rescue => e
+      logger.error "\tERROR: \n%s" % [e.message] if logger
+      raise e
     end
 
     def handle(env)
@@ -200,6 +237,15 @@ module Soybean
         end
       end
       nil
+    end
+
+    protected
+    def pretty_xml(string, ident='  ')
+      Nokogiri.XML(string) { |config| config.default_xml.noblanks }.to_xml(ident: 2).each_line.map do |line|
+        "#{ident}#{line}"
+      end.join
+    rescue
+      string
     end
   end
 end

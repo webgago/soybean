@@ -65,3 +65,1289 @@ D, [2011-10-15T19:40:29.546863 #10973] DEBUG -- : 	REQUEST:
    </soapenv:Body>
 </soapenv:Envelope>
 I, [2011-10-15T19:41:39.753824 #10973]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:00:04.997445 #20049]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:00:04.997542 #20049]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:01:06.153725 #20049]  INFO -- : InquiryService
+D, [2011-10-17T12:01:06.153888 #20049] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:01:45.593109 #20049]  INFO -- : InquiryService
+D, [2011-10-17T12:01:45.593306 #20049] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:03:52.440598 #20049]  INFO -- : InquiryService
+D, [2011-10-17T12:03:52.440750 #20049] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:04:00.952963 #20049]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:04:02.307179 #23638]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:04:02.307304 #23638]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:04:07.623521 #23638]  INFO -- : InquiryService
+D, [2011-10-17T12:04:07.623783 #23638] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:05:05.238229 #23638]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:05:06.582020 #24548]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:05:06.582133 #24548]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:05:07.942619 #24548]  INFO -- : InquiryService
+D, [2011-10-17T12:05:07.942852 #24548] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:06:42.812089 #24548]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:06:44.231540 #25943]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:06:44.231653 #25943]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:06:46.325151 #25943]  INFO -- : InquiryService
+D, [2011-10-17T12:06:46.325239 #25943] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <!--Optional:-->
+         <inquiryIdentifier>?</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:07:01.846301 #25943]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:09:13.729226 #27874]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:09:13.729338 #27874]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:09:23.988243 #27874]  INFO -- : InquiryService
+D, [2011-10-17T12:09:23.988433 #27874] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:09:55.457455 #27874]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:10:59.826689 #29327]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:10:59.826799 #29327]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:11:03.471495 #29327]  INFO -- : InquiryService
+D, [2011-10-17T12:11:03.471663 #29327] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:13:56.435818 #29327]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:13:57.873903 #31625]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:13:57.874035 #31625]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:13:59.430727 #31625]  INFO -- : InquiryService
+D, [2011-10-17T12:13:59.430967 #31625] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:14:20.457045 #31625]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:14:21.656893 #31996]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:14:21.657005 #31996]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:14:24.227965 #31996]  INFO -- : InquiryService
+D, [2011-10-17T12:14:24.228135 #31996] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:14:30.238187 #31996]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:15:33.712764 #483]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:15:33.712874 #483]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:15:35.427716 #483]  INFO -- : InquiryService
+D, [2011-10-17T12:15:35.427859 #483] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+I, [2011-10-17T12:15:51.954939 #483]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:18:09.243059 #2940]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:18:09.243175 #2940]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:18:10.612117 #2940]  INFO -- : InquiryService
+D, [2011-10-17T12:18:10.612314 #2940] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:18:10.613545 #2940] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x0000000284c248&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:18:38.720891 #2940]  INFO -- : InquiryService
+D, [2011-10-17T12:18:38.721023 #2940] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:18:38.723244 #2940] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x0000000281d038&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:18:46.734229 #2940]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:18:55.208805 #3659]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:18:55.208915 #3659]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:19:00.131804 #3659]  INFO -- : InquiryService
+D, [2011-10-17T12:19:00.131948 #3659] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson>
+         <inquiryIdentifier>1</inquiryIdentifier>
+      </type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:19:00.134550 #3659] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002865a40&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:20:57.592641 #3659]  INFO -- : InquiryService
+D, [2011-10-17T12:20:57.592774 #3659] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:20:57.595652 #3659] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002831f88&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:08.619216 #3659]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:45:11.712973 #24227]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:45:11.714220 #24227]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:45:18.358944 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:18.359031 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:18.360111 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:18.360163 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000030dbb98&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:26.699110 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:26.699273 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:26.702195 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:26.702360 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x0000000306d3f0&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:27.931993 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:27.932178 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:27.934968 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:27.935107 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x0000000300cf78&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:28.579473 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:28.579600 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:28.580924 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:28.581012 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002fabed0&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:29.513162 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:29.513282 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:29.515268 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:29.515478 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002f803c0&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:30.345223 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:30.345342 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:30.347320 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:30.347463 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002f60d90&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:30.897071 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:30.897195 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:30.899597 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:30.899750 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002f03690&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:31.402519 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:31.402684 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:31.405112 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:31.405188 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002ee0ed8&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:32.001625 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:32.001792 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:32.003917 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:32.004045 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002ea2db8&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:32.984648 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:32.984825 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:32.986757 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:32.986881 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002e69e78&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:33.670974 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:33.671042 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:33.672221 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:33.672335 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002e1cbf0&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:45:34.844601 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:45:34.844740 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:45:34.846931 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:45:34.847105 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002deed40&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:46:48.793323 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:46:48.793413 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:46:48.794718 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:46:48.794871 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002d58e08&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:46:49.420485 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:46:49.420582 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:46:49.422013 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:46:49.422135 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002d38388&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:46:50.136263 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:46:50.136380 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:46:50.138182 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:46:50.138295 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002cd1368&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:46:50.784150 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:46:50.784279 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:46:50.786447 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:46:50.786591 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002caedb8&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:47:17.699857 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:47:17.700116 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:47:17.703021 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:47:17.703185 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000028e2950&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:47:18.568206 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:47:18.568341 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:47:18.570314 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:47:18.570448 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002806090&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:47:19.504132 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:47:19.504259 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:47:19.506181 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:47:19.506306 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002696908&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:47:24.531858 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:47:24.531999 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:47:24.533908 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:47:24.534044 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000025f5558&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:47:32.834485 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:47:32.834676 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:47:32.835864 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:47:32.835938 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000025027e0&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:48:19.157144 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:48:19.157288 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:48:19.159243 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:48:19.159379 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x00000002421ee8&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:48:20.037681 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:48:20.037793 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:48:20.039718 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:48:20.039837 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000021b6e60&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:48:20.647944 #24227]  INFO -- : InquiryService
+D, [2011-10-17T12:48:20.648067 #24227] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:48:20.649897 #24227] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:48:20.650014 #24227] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/">#&lt;Rzags::InquiryService::Type::GetAnswerAboutPerson:0x000000020717f8&gt;</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:48:24.155716 #24227]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:50:10.848344 #28198]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:50:10.849662 #28198]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:50:13.010521 #28198]  INFO -- : InquiryService
+D, [2011-10-17T12:50:13.010706 #28198] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:50:13.013028 #28198] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:50:13.013134 #28198] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:51:59.446414 #28198]  INFO -- : SOAP Services: STOP
+I, [2011-10-17T12:52:59.215662 #30386]  INFO -- : SOAP Services: START
+I, [2011-10-17T12:52:59.215758 #30386]  INFO -- : Service found: InquiryService route to /InquiryService
+I, [2011-10-17T12:53:01.596161 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:01.596297 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:01.598560 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:01.598671 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:05.211616 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:05.211794 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:05.214805 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:05.215014 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:05.864890 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:05.865017 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:05.867028 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:05.867141 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:06.401438 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:06.401548 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:06.403483 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:06.403645 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:09.361364 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:09.361477 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:09.363374 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:09.363497 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:10.264958 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:10.265069 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:10.267009 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:10.267115 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:12.224714 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:12.224828 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:12.226713 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:12.226835 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:12.833661 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:12.833773 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:12.835892 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:12.836021 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:13.568874 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:13.568986 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:13.570863 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:13.570985 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:14.232398 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:14.232511 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:14.234510 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:14.234637 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:15.105583 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:15.105667 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:15.107545 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:15.107715 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:15.968471 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:15.968586 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:15.970520 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:15.970638 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:16.688623 #30386]  INFO -- : InquiryService
+D, [2011-10-17T12:53:16.688734 #30386] DEBUG -- : 	REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+D, [2011-10-17T12:53:16.690617 #30386] DEBUG -- : 	RESPONSE HEADERS: 
+{"content-type"=>"text/xml; charset=\"UTF-8\""}
+D, [2011-10-17T12:53:16.690776 #30386] DEBUG -- : 	RESPONSE: 
+<?xml version="1.0" encoding="utf-8" ?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/"
+        xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+I, [2011-10-17T12:53:18.694681 #30386]  INFO -- : SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+	ERROR: 
+private method `format' called for 2011-10-17 14:20:38 +0400:Time
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+Started POST "" for 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+Started POST "" for 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+Started POST "" for 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+Started POST "" for 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:29:02. caller 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:31:58. caller 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:32:00. caller 
+  Processing by InquiryService
+  Parameters: 
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Body>
+    <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+  </env:Body>
+</env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:35:17. caller 
+  Processing by InquiryService
+  Parameters: 
+    <?xml version="1.0"?>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+
+       <soapenv:Header/>
+
+       <soapenv:Body>
+
+          <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+
+       </soapenv:Body>
+
+    </soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+
+      <env:Body>
+
+        <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+
+      </env:Body>
+
+    </env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:37:53. caller 
+  Processing by InquiryService
+  Parameters: 
+    <?xml version="1.0"?>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+
+       <soapenv:Header/>
+
+       <soapenv:Body>
+
+          <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+
+       </soapenv:Body>
+
+    </soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+
+      <env:Body>
+
+        <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+
+      </env:Body>
+
+    </env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:38:13. caller 
+  Processing by InquiryService
+  Parameters: 
+    <?xml version="1.0"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+       <soapenv:Header/>
+       <soapenv:Body>
+          <type:getAnswerAboutPerson><inquiryIdentifier>1</inquiryIdentifier></type:getAnswerAboutPerson>
+       </soapenv:Body>
+    </soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+    <?xml version="1.0" encoding="utf-8"?>
+    <env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+      <env:Body>
+        <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+      </env:Body>
+    </env:Envelope>
+
+SOAP Services: STOP
+SOAP Services: START
+Service found: InquiryService route to /InquiryService
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:39:13. caller 
+  Processing by InquiryService
+  Parameters: 
+    <?xml version="1.0"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <type:getAnswerAboutPerson>
+          <inquiryIdentifier>1</inquiryIdentifier>
+        </type:getAnswerAboutPerson>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+    <?xml version="1.0" encoding="utf-8"?>
+    <env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+      <env:Body>
+        <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+      </env:Body>
+    </env:Envelope>
+
+Started POST "/InquiryService" for 127.0.0.1 at 2011-10-17 14:39:40. caller 
+  Processing by InquiryService
+  Parameters: 
+    <?xml version="1.0"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="http://ezags.rt.ru/rzags/InquiryService/type/">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <type:getAnswerAboutPerson>
+          <inquiryIdentifier>1</inquiryIdentifier>
+        </type:getAnswerAboutPerson>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+Response:
+  Headers: {"content-type"=>"text/xml; charset=\"UTF-8\""}
+  Body: 
+    <?xml version="1.0" encoding="utf-8"?>
+    <env:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+      <env:Body>
+        <n1:getAnswerAboutPersonResponse xmlns:n1="http://ezags.rt.ru/rzags/InquiryService/type/" xsi:type="xsd:int">1</n1:getAnswerAboutPersonResponse>
+      </env:Body>
+    </env:Envelope>
+

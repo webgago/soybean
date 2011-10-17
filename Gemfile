@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem 'thor'
 gem 'activesupport', '~> 3.1'
 gem 'i18n'
+gem 'nokogiri'
 gem 'rack'
 gem 'rack-mount'
 

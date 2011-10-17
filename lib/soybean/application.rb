@@ -14,14 +14,14 @@ module Soybean
       at_exit{ logger.info "SOAP Services: STOP" }
 
       @app = Rack::Builder.new do
-        #use Rack::CommonLogger
         Soybean.engines.each do |engine|
-          engine.logger.info "Service found: #{engine.service.endpoint} route to /#{engine.service.class.name}"
+          engine.logger.info "Service found: #{engine.service.endpoint} route to /#{engine.service.class.name}" if engine.logger
           map "/#{engine.service.endpoint}" do
             run engine.new
           end
         end
 
+        Soybean.engines.last.logger.info ""
       end.to_app
     end
 
@@ -38,6 +38,12 @@ module Soybean
 
     def configure(&block)
       instance_eval &block
+
+      logger.datetime_format = "%Y-%m-%d %H:%M:%S"
+      logger.formatter = proc { |severity, datetime, progname, msg|
+        "#{msg}\n"
+      }
+
       Soybean.engines.each do |engine|
         engine.logger = logger
       end

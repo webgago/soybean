@@ -7,7 +7,6 @@ require 'active_support/dependencies'
 require 'active_support/dependencies/autoload'
 require 'active_support/core_ext/module/delegation'
 require 'active_support/core_ext/module/attribute_accessors'
-require 'active_support/concern'
 require 'logger'
 
 $:.unshift File.absolute_path(File.join(File.dirname(__FILE__), '..', 'vendor/soap4r'))
