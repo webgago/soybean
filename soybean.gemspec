@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{soybean}
-  s.version = "2.5.2"
+  s.version = "2.5.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anton Sozontov"]
-  s.date = %q{2011-10-17}
+  s.date = %q{2011-10-27}
   s.default_executable = %q{soybean}
   s.description = %q{Generate soap web-services from you wsdl. Generate: all classes from xsd, and other.}
   s.email = %q{a.sozontov@gmail.com}
@@ -51,6 +51,7 @@ Gem::Specification.new do |s|
     "lib/soybean/interface_builder.rb",
     "lib/soybean/literal_mapping_registry_creator.rb",
     "lib/soybean/soap_attribute.rb",
+    "lib/soybean/static_server.rb",
     "soybean.gemspec",
     "soybean.log",
     "spec/soybean_spec.rb",
