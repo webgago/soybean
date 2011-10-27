@@ -139,18 +139,11 @@ module Soybean
       return s, h, b
     rescue => e
       [200, {'Allow' => 'POST',
-             'Content-Type' => 'text/plain'}, [e.message,
+             'Content-Type' => 'text/xml'}, [e.message,
                                                e.backtrace.join("\n")]]
     end
 
     def with_logging(env, logger)
-      #Started GET "/" for 127.0.0.1 at 2011-09-28 14:21:28 +0400
-      # Processing by DashboardController#index as HTML
-      # User Load (0.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`id` = 100 LIMIT 1
-      # Role Load (0.3ms)  SELECT `roles`.* FROM `roles` INNER JOIN `assignments` ON `roles`.`id` = `assignments`.`role_id` WHERE `assignments`.`user_id` = 100
-      #Redirected to http://localhost:3000/municipal_services
-      #Completed 302 Found in 89ms
-
       request = Rack::Request.new(env)
       input_params = request.body.read
       request.body.rewind
