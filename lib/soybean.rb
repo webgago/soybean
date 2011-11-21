@@ -28,4 +28,7 @@ module Soybean
   mattr_accessor :logger
   self.logger = Logger.new(STDOUT)
 
+  mattr_accessor :cache
+  self.cache = Hash.new { |hash, key| hash[key] = { } }
+
 end

@@ -27,7 +27,6 @@ class Soybean::CLI < Thor
     full_path = File.expand_path wsdl, FileUtils.pwd
     if File.directory? full_path
       Dir["#{full_path}/*.wsdl"].each do |file|
-        puts file.inspect
         generate_service(file, dir, opts)
       end
     else
@@ -42,6 +41,7 @@ class Soybean::CLI < Thor
 
   no_tasks do
     def generate_service(wsdl, dir, options)
+      Soybean.cache.clear
       Soybean::Generators::ServiceGenerator.new(dir, wsdl, spec_dir(dir)).generate do |filename, content, generator|
         opts = options
         if generator.is_a? Soybean::Generators::ModelGenerator

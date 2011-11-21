@@ -2,7 +2,7 @@ module Soybean
   module Generators
     class TypesGenerator < WSDL::SOAP::ClassDefCreator
       class_attribute :classes_cache, :instance_reader => true, :instance_writer => true
-      self.classes_cache = {}
+      self.classes_cache = Soybean.cache[:classes]
       include BaseGenerator
 
       attr_reader :name
@@ -51,7 +51,7 @@ module Soybean
 
       def with_cache
         result = yield
-        if !classes_cache.key?(result.name) && result
+        if result && !classes_cache.key?(result.name)
           classes_cache[result.name] = true
           result.dump
         end

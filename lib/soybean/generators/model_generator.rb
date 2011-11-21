@@ -18,7 +18,9 @@ module Soybean
         @wsdl.importedschema.map do |uri, schema|
           "require 'mappings/#{URI.parse(schema.targetnamespace).path[1..-2].underscore}'\n"
         end.join +
-        "class #{class_name} < #{interface_name}\nend"
+        "class #{class_name} < #{interface_name}" +
+            "include #{URI.parse(@wsdl.importedschema.values.last.targetnamespace).path[1..-2].camelize}"
+        "end"
       end
 
       def class_name

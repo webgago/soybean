@@ -43,7 +43,7 @@ class SimpleRestriction < Info
     @fixed = {}
     @attributes = XSD::NamedElements.new
   end
-  
+
   def valid?(value)
     return false unless check_restriction(value)
     return false unless check_length(value)

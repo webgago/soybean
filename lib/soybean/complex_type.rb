@@ -30,7 +30,7 @@ module Soybean
       def init_from_array(arry)
         check_arguments_number! arry
         attributes.each_with_index do |key, i|
-          self.send "#{key}=".to_sym, arry.at(i)
+          self.send :"#{key}=", arry.at(i)
         end
       end
 

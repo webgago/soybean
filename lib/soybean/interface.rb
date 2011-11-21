@@ -8,10 +8,13 @@ module Soybean
       Soybean.services << subclass if subclass.superclass < Soybean::Interface
     end
 
-    def self.actions
-      self.instance_methods - Object.instance_methods
+    def self.actions(implemented=true)
+      if implemented
+        self.public_instance_methods(false) - NO_ACTIONS
+      else
+        self::Methods.map(&:second).map(&:to_sym)
+      end
     end
-
 
     attr_reader :logger
 
