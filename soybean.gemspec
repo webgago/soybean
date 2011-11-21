@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{soybean}
-  s.version = "2.5.3"
+  s.version = "2.5.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anton Sozontov"]
-  s.date = %q{2011-10-27}
+  s.date = %q{2011-11-21}
   s.default_executable = %q{soybean}
   s.description = %q{Generate soap web-services from you wsdl. Generate: all classes from xsd, and other.}
   s.email = %q{a.sozontov@gmail.com}
