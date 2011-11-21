@@ -1,5 +1,8 @@
 module Soybean
   class Interface
+    include ActiveSupport::Callbacks
+    NO_ACTIONS = [:endpoint]
+
     class_attribute :interfaces, :instance_reader => false, :instance_writer => false
 
     def self.inherited(subclass)
