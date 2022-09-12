@@ -50,3 +50,4 @@ spec/fixtures/services
 
 # For rubinius:
 #*.rbc
+*.gem
